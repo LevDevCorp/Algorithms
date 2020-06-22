@@ -78,8 +78,6 @@ class linkedlist {
 
 
     function Node(data,next = null){
-        let data;
-        let next;
             this.data = data;
             this.next = next;
     }
