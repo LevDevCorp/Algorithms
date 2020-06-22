@@ -64,6 +64,12 @@ function divider(number1,number2){
 
 
 
+class Node{
+    constructor(data,next = null){
+        this.data = data;
+        this.next = next;
+    }
+}
 
 class linkedlist {
     constructor(){
@@ -74,16 +80,8 @@ class linkedlist {
     insertFirst(data){
         this.head = new Node(data,this.head);
     }
-
-
-
-    function Node(data,next = null){
-            this.data = data;
-            this.next = next;
-    }
 }
 
-let list1 = new linkedlist();
-list1.Node(158);
-
-console.log(list1);
+let ll = new linkedlist();
+ll.insertFirst(100);
+console.log(ll);
