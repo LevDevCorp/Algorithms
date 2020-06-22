@@ -28,4 +28,64 @@ function divider(number1,number2){
         }
 }
 
-console.log(divider(126,48));
+//console.log(divider(126,48));
+
+// function linkedLists(){
+//     this.head = null;
+// }
+
+// linkedLists.prototype.isEmpty = function(){
+//     return this.head === null;
+// };
+
+// linkedLists.prototype.size = function(){
+//     let current = this.head;
+//     let count = 0;
+    
+//     while(current !== null){
+//         count++;
+//         current = current.next;
+//     }
+//     return count;
+// };
+
+// linkedLists.prototype.prepend = function(val){
+//     let newNode = {
+//         data: val,
+//         next: this.head
+//     };
+
+//     this.head = newNode;
+// };
+
+// let list = new linkedLists();
+// list.prepend(5);
+// list.prepend(10);
+
+
+
+
+class linkedlist {
+    constructor(){
+        this.head = null;
+        this.size = 0;
+    }
+
+    insertFirst(data){
+        this.head = new Node(data,this.head);
+    }
+
+
+
+    function Node(data,next = null){
+        let data;
+        let next;
+            this.data = data;
+            this.next = next;
+    }
+}
+
+let list1 = new linkedlist();
+list1.Node(158);
+
+console.log(list1);
